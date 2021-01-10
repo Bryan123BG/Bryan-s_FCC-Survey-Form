@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+/* I. Phone Styles */
+/* Overarching div styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: linear-gradient(
+      hsla(217, 100%, 95%, 0.7),
+      hsla(217, 100%, 95%, 0.7)
+    ),
+    url(https://cdn.pixabay.com/photo/2015/05/05/09/42/paper-753508_960_720.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+main {
+  padding: 2em 1em;
+  /* background: hsla(217, 100%, 95%, 0.9); */
+  width: 100%;
+}
+div#header {
+  margin-bottom: 2em;
+}
+
+/* General font styles */
+h1#title {
+  margin-bottom: 0.2em;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: hsl(217, 100%, 10%);
+}
+p,
+label,
+legend,
+textarea,
+input,
+select,
+option {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Specific font styles */
+p#note {
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+p#image-credit {
+  margin-top: 1.5em;
+  overflow-wrap: break-word;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+/* Form elements styling */
+input,
+select,
+fieldset,
+textarea {
+  display: block;
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 3em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0.1vmax solid grey;
+}
+input,
+textarea,
+fieldset {
+  padding: 1em;
+  box-sizing: border-box;
+}
+input,
+select,
+textarea {
+  margin-top: 0.5em;
+}
+fieldset,
+textarea {
+  height: auto;
+}
+textarea {
+  height: 10em;
+}
+select {
+  padding-left: 1em;
+}
+label,
+legend {
+  font-size: 1rem;
+  font-weight: 700;
+  vertical-align: center;
+}
+.required::after {
+  content: "*";
+  display: inline;
+  margin-left: 0.1em;
+  color: rgb(151, 0, 0);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1.5em;
+  margin: 0;
+}
+input[type="submit"] {
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  background: hsl(46, 100%, 50%);
+}
+
+/* Miscellaneous */
+span.asterisks {
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(151, 0, 0);
+}
+.no-bold {
+  font-weight: normal;
+}
+label.no-bold {
+  margin-left: 1em;
+}
+span.radio-checkbox-group {
+  display: flex;
+  align-items: center;
+}

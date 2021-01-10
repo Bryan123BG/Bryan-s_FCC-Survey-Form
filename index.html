@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Bryan's FCC Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <div id="header">
+        <h1 id="title">FCC Hobby Survey Form</h1>
+        <p id="description">A survey about your hobbies</p>
+      </div>
+      <form id="survey-form">
+        <p id="note">
+          Note that fields marked with <span class="asterisks">*</span> are
+          required
+        </p>
+        <span>
+          <label for="name" id="name-label" class="required">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </span>
+        <span>
+          <label for="email" id="email-label" class="required">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your e-mail"
+            required
+          />
+        </span>
+        <label for="number" id="number-label">
+          Age <span class="no-bold">(optional)</span>
+          <input
+            type="number"
+            min="0"
+            max="150"
+            id="number"
+            placeholder="Enter your age"
+          />
+        </label>
+        <label for="dropdown">
+          What is your occupation? <span class="no-bold">(optional)</span>
+          <select id="dropdown">
+            <option value="student">Student</option>
+            <option value="worker">Worker</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="businessman">Businessman</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <p class="radio-checkbox-title"></p>
+        <fieldset>
+          <legend class="required">Do you like hobbies?</legend>
+          <span class="radio-checkbox-group">
+            <input
+              type="radio"
+              name="like-hobby-or-not"
+              value="yes"
+              id="like-hobby--yes"
+              required
+            />
+            <label for="like-hobby--yes" class="no-bold"> Yes </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="radio"
+              name="like-hobby-or-not"
+              value="no"
+              id="like-hobby--no"
+              required
+            />
+            <label for="like-hobby--no" class="no-bold"> No </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="radio"
+              name="like-hobby-or-not"
+              value="no"
+              id="like-hobby--maybe"
+              required
+            />
+            <label for="like-hobby--maybe" class="no-bold"> Maybe </label>
+          </span>
+        </fieldset>
+        <fieldset>
+          <legend>
+            If you do, what are your hobbies?
+            <span class="no-bold">(optional)</span>
+          </legend>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--sports"
+            />
+            <label for="hobby--sports" class="no-bold"> Sports </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--coding"
+            />
+            <label for="hobby--coding" class="no-bold"> Coding </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--painting"
+            />
+            <label for="hobby--painting" class="no-bold"> Painting </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--drawing"
+            />
+            <label for="hobby--drawing" class="no-bold"> Drawing </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--gaming"
+            />
+            <label for="hobby--gaming" class="no-bold"> Gaming </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--reading"
+            />
+            <label for="hobby--reading" class="no-bold"> Reading </label>
+          </span>
+          <span class="radio-checkbox-group">
+            <input
+              type="checkbox"
+              name="hobbies"
+              value="yes"
+              id="hobby--other"
+            />
+            <label for="hobby--other" class="no-bold"> Other </label>
+          </span>
+        </fieldset>
+        <label for="comments">
+          Have any additional comments or things you would like us to know?
+          Please write them below <span class="no-bold">(optional)</span>
+          <textarea
+            id="comments"
+            placeholder="Fill in additional comments here"
+          ></textarea>
+        </label>
+        <input type="submit" id="submit" />
+      </form>
+      <p id="image-credit">
+        Background image taken from:
+        https://pixabay.com/photos/paper-texture-scrapbooking-753508/
+        <br />
+        Exact image link used:
+        https://cdn.pixabay.com/photo/2015/05/05/09/42/paper-753508_960_720.jpg
+      </p>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
